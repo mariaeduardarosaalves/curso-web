@@ -6,14 +6,28 @@
         <tittle>Aula 1</tittle>
 
         <script type="text/javascript">
-            var nota = prompt('Digite a nota do aluno');
-            var  media = 7;
 
-            if(nota >= media){
+            
+            var nota = prompt('Digite a nota do aluno');
+            var faltas = prompt('Digite a quantidade de faltas do aluno');
+            var  media = 7;
+            var faltas_limites = 15;
+
+            if(nota >= media && faltas <= faltas_limites){
                 documet.write('Aprovado')
             } else {
                 document.write('Reprovado')
             }
+            
+
+            /*
+            if(2 == 2 && 3 == 4){
+                document.write('Verdadeiro')
+            } else {
+                document.write('Falso')
+            }
+            */
+
         </script>
     
     </head>
