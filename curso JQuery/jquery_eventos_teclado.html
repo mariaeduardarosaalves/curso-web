@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
 
-        <title>JQuery eventos - mouse</title>
+        <title>JQuery eventos - Teclado</title>
 
        <script src="js/jquery-2.2.0.js"></script>
 
@@ -11,18 +11,18 @@
 
         $(document).ready( function(){
 
-            $('#div1').dblclick( function(){
-                alert('Elemento foi clicado 2x');
+            $('#campo1').keydown( function(){
+                alert('Botao foi pressionado');
             });
-
+            
         });
        </script>
     
     </head>
 
     <body>
-        <div id="div1" style="height: 150px; width: 150px; background: #ccc">
 
-        </div>
+        <input id="campo1" type="text" />
+        
     </body>
 </html>    

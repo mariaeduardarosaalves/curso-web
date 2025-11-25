@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>JQuery eventos - Formulários</title>
+
+       <script src="js/jquery-2.2.0.js"></script>
+
+       <script type="text/javascript">
+
+        $(document).ready( function(){
+
+            $('.campo1').change( function(){
+                alert('Elemento foi modificado');
+            });
+            
+        });
+       </script>
+    
+    </head>
+
+    <body>
+
+        <select class="campo1" type="text">
+            <option value="1">Primeira Opção</option>
+            <option value="2">Segunda Opção</option>
+        </select>
+        
+    </body>
+</html>    
